@@ -1,0 +1,19 @@
+1. Set up new empty project in XCode. Click on with unit tests, to set up a test target, and and a git repository so git is set up for you locally. 
+
+2. You can then set up a git remote repository in your github, and set your local directory to push and pull from this, using your remote url:
+	git remote add <name> <url> 
+and:
+	git branch --set-upstream <branch> <repo/branch>
+
+3. I'm just going to add some folders to our project so we can easily categorise classes as we go along. Under the folder sarnie click add New Group. Do this 3 times to add Application, Model, Views and Controllers. appDelegate can be added to the Application group, which I'll use to store high level app start up and control stuff. I guess its technically a kind of controller but on a meta level this high I'd rather keep it separate.  
+	
+4. You can now switch to appcode. I'm going to add a OCUnit test configuration run to the test target we created in Xcode, using Run | Edit configurations, add OCUnit config, target your Test target. 
+
+5. Create your CocoaPod dependencies. In the same level as your project file, create a Podfile. For your run test targets, add dependencies for Hamcrest and OCMock. For the non test run, add Reveal, if you want to use it. Etc. for adding other dependencies. 
+
+run $ pod install
+
+From now on open the .xcworkspace not the usual project file. (hope this works in appcode - yup!)
+
+6. Right. Time to start test driving... !
+
