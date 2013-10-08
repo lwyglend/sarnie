@@ -21,7 +21,9 @@
 		493C48CF17B51F8600D2447F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C48AF17B51F8600D2447F /* UIKit.framework */; };
 		493C48D017B51F8600D2447F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C48B117B51F8600D2447F /* Foundation.framework */; };
 		493C48D817B51F8600D2447F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 493C48D617B51F8600D2447F /* InfoPlist.strings */; };
-		493C48DB17B51F8600D2447F /* algorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493C48DA17B51F8600D2447F /* algorithmTests.m */; };
+		493C48DB17B51F8600D2447F /* LWSFlavourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493C48DA17B51F8600D2447F /* LWSFlavourTests.m */; };
+		49B4916E17E10EC900D84AB2 /* LWSFlavourWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4916D17E10EC900D84AB2 /* LWSFlavourWheel.m */; };
+		49B491721802DEC800D84AB2 /* LWSFlavourMatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B491711802DEC800D84AB2 /* LWSFlavourMatchTests.m */; };
 		F4DA218DE0EE44E9B9E9C82F /* libPods-sarnieTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE396CCECA6492EB580D8CF /* libPods-sarnieTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +56,12 @@
 		493C48CD17B51F8600D2447F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		493C48D517B51F8600D2447F /* sarnieTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sarnieTests-Info.plist"; sourceTree = "<group>"; };
 		493C48D717B51F8600D2447F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		493C48D917B51F8600D2447F /* algorithmTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algorithmTests.h; sourceTree = "<group>"; };
-		493C48DA17B51F8600D2447F /* algorithmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = algorithmTests.m; sourceTree = "<group>"; };
+		493C48D917B51F8600D2447F /* LWSFlavourTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSFlavourTests.h; sourceTree = "<group>"; };
+		493C48DA17B51F8600D2447F /* LWSFlavourTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSFlavourTests.m; sourceTree = "<group>"; };
+		49B4916C17E10EC900D84AB2 /* LWSFlavourWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSFlavourWheel.h; sourceTree = "<group>"; };
+		49B4916D17E10EC900D84AB2 /* LWSFlavourWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSFlavourWheel.m; sourceTree = "<group>"; };
+		49B491701802DEC800D84AB2 /* LWSFlavourMatchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSFlavourMatchTests.h; sourceTree = "<group>"; };
+		49B491711802DEC800D84AB2 /* LWSFlavourMatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSFlavourMatchTests.m; sourceTree = "<group>"; };
 		5AE396CCECA6492EB580D8CF /* libPods-sarnieTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sarnieTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		783BC3208A1A4C0897496BE0 /* Pods-sarnie.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sarnie.xcconfig"; path = "Pods/Pods-sarnie.xcconfig"; sourceTree = SOURCE_ROOT; };
 		D8A53C08A2A14657AD63BF01 /* libPods-sarnie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sarnie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,8 +156,7 @@
 		493C48D317B51F8600D2447F /* sarnieTests */ = {
 			isa = PBXGroup;
 			children = (
-				493C48D917B51F8600D2447F /* algorithmTests.h */,
-				493C48DA17B51F8600D2447F /* algorithmTests.m */,
+				49B4916F1802DC5A00D84AB2 /* ModelTests */,
 				493C48D417B51F8600D2447F /* Supporting Files */,
 			);
 			path = sarnieTests;
@@ -169,6 +174,8 @@
 		493C48E417B5305500D2447F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				49B4916C17E10EC900D84AB2 /* LWSFlavourWheel.h */,
+				49B4916D17E10EC900D84AB2 /* LWSFlavourWheel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -194,6 +201,17 @@
 				493C48BE17B51F8600D2447F /* LWSAppDelegate.h */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		49B4916F1802DC5A00D84AB2 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				493C48D917B51F8600D2447F /* LWSFlavourTests.h */,
+				493C48DA17B51F8600D2447F /* LWSFlavourTests.m */,
+				49B491701802DEC800D84AB2 /* LWSFlavourMatchTests.h */,
+				49B491711802DEC800D84AB2 /* LWSFlavourMatchTests.m */,
+			);
+			name = ModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +310,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		25803438827F483A9F98EDDB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -302,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"Pods/../Podfile.lock\" \"Pods/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		493C48CA17B51F8600D2447F /* ShellScript */ = {
@@ -372,6 +390,7 @@
 			files = (
 				493C48BC17B51F8600D2447F /* main.m in Sources */,
 				493C48C017B51F8600D2447F /* LWSAppDelegate.m in Sources */,
+				49B4916E17E10EC900D84AB2 /* LWSFlavourWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +398,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				493C48DB17B51F8600D2447F /* algorithmTests.m in Sources */,
+				493C48DB17B51F8600D2447F /* LWSFlavourTests.m in Sources */,
+				49B491721802DEC800D84AB2 /* LWSFlavourMatchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 783BC3208A1A4C0897496BE0 /* Pods-sarnie.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sarnie/sarnie-Prefix.pch";
 				INFOPLIST_FILE = "sarnie/sarnie-Info.plist";
@@ -486,7 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 783BC3208A1A4C0897496BE0 /* Pods-sarnie.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sarnie/sarnie-Prefix.pch";
 				INFOPLIST_FILE = "sarnie/sarnie-Info.plist";
@@ -500,6 +520,7 @@
 			baseConfigurationReference = 36EE07D095CB491DAAC6F16C /* Pods-sarnieTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sarnie.app/sarnie";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Laura Wyglendacz (ANC7B5R8KW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -518,6 +539,7 @@
 			baseConfigurationReference = 36EE07D095CB491DAAC6F16C /* Pods-sarnieTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/sarnie.app/sarnie";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Laura Wyglendacz (ANC7B5R8KW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",

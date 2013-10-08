@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface algorithmTests : SenTestCase
+@interface LWSFlavourTests : SenTestCase
 
 @end
