@@ -24,6 +24,13 @@
 		493C48DB17B51F8600D2447F /* LWSFlavourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493C48DA17B51F8600D2447F /* LWSFlavourTests.m */; };
 		49B4916E17E10EC900D84AB2 /* LWSFlavourWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4916D17E10EC900D84AB2 /* LWSFlavourWheel.m */; };
 		49B491721802DEC800D84AB2 /* LWSFlavourMatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B491711802DEC800D84AB2 /* LWSFlavourMatchTests.m */; };
+		49B4917518044D4F00D84AB2 /* LWSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4917418044D4F00D84AB2 /* LWSHomeViewController.m */; };
+		49B4917818044D7600D84AB2 /* LWSHomeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4917718044D7600D84AB2 /* LWSHomeDataSource.m */; };
+		49B4917B18044D8000D84AB2 /* LWSHomeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4917A18044D8000D84AB2 /* LWSHomeDelegate.m */; };
+		49B4917F18044E0A00D84AB2 /* LWSHomeViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B4917E18044E0A00D84AB2 /* LWSHomeViewControllerTests.m */; };
+		49B49183180450B400D84AB2 /* LWSHomeViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B49182180450B400D84AB2 /* LWSHomeViewTests.m */; };
+		49B491861804551800D84AB2 /* LWSHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B491851804551800D84AB2 /* LWSHomeView.m */; };
+		49B4918A1804561A00D84AB2 /* LWSViewTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B491891804561A00D84AB2 /* LWSViewTester.m */; };
 		F4DA218DE0EE44E9B9E9C82F /* libPods-sarnieTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE396CCECA6492EB580D8CF /* libPods-sarnieTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +69,20 @@
 		49B4916D17E10EC900D84AB2 /* LWSFlavourWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSFlavourWheel.m; sourceTree = "<group>"; };
 		49B491701802DEC800D84AB2 /* LWSFlavourMatchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSFlavourMatchTests.h; sourceTree = "<group>"; };
 		49B491711802DEC800D84AB2 /* LWSFlavourMatchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSFlavourMatchTests.m; sourceTree = "<group>"; };
+		49B4917318044D4F00D84AB2 /* LWSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSHomeViewController.h; sourceTree = "<group>"; };
+		49B4917418044D4F00D84AB2 /* LWSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSHomeViewController.m; sourceTree = "<group>"; };
+		49B4917618044D7600D84AB2 /* LWSHomeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSHomeDataSource.h; sourceTree = "<group>"; };
+		49B4917718044D7600D84AB2 /* LWSHomeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSHomeDataSource.m; sourceTree = "<group>"; };
+		49B4917918044D8000D84AB2 /* LWSHomeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSHomeDelegate.h; sourceTree = "<group>"; };
+		49B4917A18044D8000D84AB2 /* LWSHomeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSHomeDelegate.m; sourceTree = "<group>"; };
+		49B4917D18044E0A00D84AB2 /* LWSHomeViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSHomeViewControllerTests.h; sourceTree = "<group>"; };
+		49B4917E18044E0A00D84AB2 /* LWSHomeViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSHomeViewControllerTests.m; sourceTree = "<group>"; };
+		49B49181180450B400D84AB2 /* LWSHomeViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSHomeViewTests.h; sourceTree = "<group>"; };
+		49B49182180450B400D84AB2 /* LWSHomeViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSHomeViewTests.m; sourceTree = "<group>"; };
+		49B491841804551800D84AB2 /* LWSHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSHomeView.h; sourceTree = "<group>"; };
+		49B491851804551800D84AB2 /* LWSHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSHomeView.m; sourceTree = "<group>"; };
+		49B491881804561A00D84AB2 /* LWSViewTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSViewTester.h; sourceTree = "<group>"; };
+		49B491891804561A00D84AB2 /* LWSViewTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSViewTester.m; sourceTree = "<group>"; };
 		5AE396CCECA6492EB580D8CF /* libPods-sarnieTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sarnieTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		783BC3208A1A4C0897496BE0 /* Pods-sarnie.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sarnie.xcconfig"; path = "Pods/Pods-sarnie.xcconfig"; sourceTree = SOURCE_ROOT; };
 		D8A53C08A2A14657AD63BF01 /* libPods-sarnie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sarnie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +119,7 @@
 			children = (
 				493C48B517B51F8600D2447F /* sarnie */,
 				493C48D317B51F8600D2447F /* sarnieTests */,
+				49B49187180455DA00D84AB2 /* testUtilities */,
 				493C48AE17B51F8600D2447F /* Frameworks */,
 				493C48AD17B51F8600D2447F /* Products */,
 				783BC3208A1A4C0897496BE0 /* Pods-sarnie.xcconfig */,
@@ -156,6 +178,8 @@
 		493C48D317B51F8600D2447F /* sarnieTests */ = {
 			isa = PBXGroup;
 			children = (
+				49B49180180450A100D84AB2 /* ViewTests */,
+				49B4917C18044DDF00D84AB2 /* ControllerTests */,
 				49B4916F1802DC5A00D84AB2 /* ModelTests */,
 				493C48D417B51F8600D2447F /* Supporting Files */,
 			);
@@ -183,6 +207,8 @@
 		493C48E517B5305C00D2447F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49B491841804551800D84AB2 /* LWSHomeView.h */,
+				49B491851804551800D84AB2 /* LWSHomeView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -190,6 +216,12 @@
 		493C48E617B5306300D2447F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				49B4917318044D4F00D84AB2 /* LWSHomeViewController.h */,
+				49B4917418044D4F00D84AB2 /* LWSHomeViewController.m */,
+				49B4917618044D7600D84AB2 /* LWSHomeDataSource.h */,
+				49B4917718044D7600D84AB2 /* LWSHomeDataSource.m */,
+				49B4917918044D8000D84AB2 /* LWSHomeDelegate.h */,
+				49B4917A18044D8000D84AB2 /* LWSHomeDelegate.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +244,33 @@
 				49B491711802DEC800D84AB2 /* LWSFlavourMatchTests.m */,
 			);
 			name = ModelTests;
+			sourceTree = "<group>";
+		};
+		49B4917C18044DDF00D84AB2 /* ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				49B4917D18044E0A00D84AB2 /* LWSHomeViewControllerTests.h */,
+				49B4917E18044E0A00D84AB2 /* LWSHomeViewControllerTests.m */,
+			);
+			name = ControllerTests;
+			sourceTree = "<group>";
+		};
+		49B49180180450A100D84AB2 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				49B49181180450B400D84AB2 /* LWSHomeViewTests.h */,
+				49B49182180450B400D84AB2 /* LWSHomeViewTests.m */,
+			);
+			name = ViewTests;
+			sourceTree = "<group>";
+		};
+		49B49187180455DA00D84AB2 /* testUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				49B491881804561A00D84AB2 /* LWSViewTester.h */,
+				49B491891804561A00D84AB2 /* LWSViewTester.m */,
+			);
+			name = testUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +450,10 @@
 				493C48BC17B51F8600D2447F /* main.m in Sources */,
 				493C48C017B51F8600D2447F /* LWSAppDelegate.m in Sources */,
 				49B4916E17E10EC900D84AB2 /* LWSFlavourWheel.m in Sources */,
+				49B4917518044D4F00D84AB2 /* LWSHomeViewController.m in Sources */,
+				49B4917818044D7600D84AB2 /* LWSHomeDataSource.m in Sources */,
+				49B4917B18044D8000D84AB2 /* LWSHomeDelegate.m in Sources */,
+				49B491861804551800D84AB2 /* LWSHomeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +463,9 @@
 			files = (
 				493C48DB17B51F8600D2447F /* LWSFlavourTests.m in Sources */,
 				49B491721802DEC800D84AB2 /* LWSFlavourMatchTests.m in Sources */,
+				49B4917F18044E0A00D84AB2 /* LWSHomeViewControllerTests.m in Sources */,
+				49B49183180450B400D84AB2 /* LWSHomeViewTests.m in Sources */,
+				49B4918A1804561A00D84AB2 /* LWSViewTester.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
