@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LWSHomeViewController : NSObject
+@interface LWSHomeViewController : UIViewController
 
 @end

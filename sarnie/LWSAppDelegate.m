@@ -7,6 +7,7 @@
 //
 
 #import "LWSAppDelegate.h"
+#import "LWSHomeViewController.h"
 
 @implementation LWSAppDelegate
 
@@ -15,6 +16,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    //Set root view controller, one shown on app launch
+    LWSHomeViewController *homeViewController =[[LWSHomeViewController alloc] init];
+    
+    self.window.rootViewController = homeViewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

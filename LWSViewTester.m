@@ -12,7 +12,7 @@
 
 @implementation LWSViewTester
 
-+(UIButton *)findFirstUIViewIn:(NSArray *)subviews withLabelText:(NSString *)expectedText
++(UIView *)findFirstUIViewIn:(NSArray *)subviews withLabelText:(NSString *)expectedText
 {
     NSIndexSet *indexSet = [self findIndexesOfLabelsIn:subviews withLabelText:expectedText];
     if ([indexSet count] == 0) {
@@ -31,6 +31,24 @@
                                           return 0;
                                       }];
     return subviewsWithLabelText;
+}
+
++(UIView *)findFirstUIViewIn:(NSArray *)subviews withAccessibilityLabelText:(NSString *)expectedText
+{
+    NSIndexSet *indexSet = [self findIndexesOfViewsIn:subviews withAccessibilityLabelText:expectedText];
+    if ([indexSet count] == 0) {
+        [NSException raise:@"Indexes Set is empty" format:@"No indexes for label text '%@' found", expectedText];
+    }
+    return [subviews objectAtIndex:[indexSet firstIndex]];
+}
+
++ (NSIndexSet *)findIndexesOfViewsIn:(NSArray *)array
+    withAccessibilityLabelText:(NSString *)accessibilityLabelText
+{
+    return [array indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop)
+            {
+                return [obj isKindOfClass:[UIView class]] && [[obj accessibilityLabel] isEqualToString:accessibilityLabelText];
+            }];
 }
 
 

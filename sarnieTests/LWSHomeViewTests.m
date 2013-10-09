@@ -12,21 +12,29 @@
 #import "LWSHomeViewTests.h"
 #import "LWSHomeView.h"
 
+@interface LWSHomeViewTests ()
+
+@property (nonatomic) LWSHomeView *homeView;
+
+@end
+
 @implementation LWSHomeViewTests
 
-//-(void)testMakeASarnieButtonIsDisplayedAndHasTheCorrectText
+-(void)setUp
+{
+    _homeView = [[LWSHomeView alloc]init];
+}
+
+//-(void)testMakeASarnieButtonIsDisplayedWithCorrectText
 //{
 //    //given
-//    LWSHomeView *homeView = [[LWSHomeView alloc]init];
 //    NSString *expectedMakeASarnieButtonText = @"Make a sarnie!";
 //    
 //    //when
 //    
 //    //then
-//    UIView *view = [LWSViewTester findFirstUIViewIn:homeView.subviews withLabelText:expectedMakeASarnieButtonText];
-//    
+//    UIView *view = [LWSViewTester findFirstUIViewIn:self.homeView.subviews withAccessibilityLabelText:expectedMakeASarnieButtonText];
 //    [LWSViewTester assertThatFrameOriginAndSizeIsNonZero:view];
-//    assertThatBool(buttonDimensionsAreGreaterThanZero, is(@YES) );
 //    assertThat([view class], is([UIButton class]));
 //}
 

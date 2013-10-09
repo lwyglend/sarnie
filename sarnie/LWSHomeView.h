@@ -10,4 +10,6 @@
 
 @interface LWSHomeView : UIView
 
++(instancetype)homeView;
+
 @end
