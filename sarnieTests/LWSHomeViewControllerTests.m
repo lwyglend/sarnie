@@ -12,8 +12,5 @@
 
 @implementation LWSHomeViewControllerTests
 
--(void)testViewDidLoad
-{
-    
-}
+
 @end

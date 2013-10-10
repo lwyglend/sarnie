@@ -12,6 +12,17 @@
 
 @implementation LWSViewTester
 
++(NSNumber *)numberOfUIButtonsIn:(NSArray *)subviews
+{
+    NSIndexSet *indexSet = [subviews indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop)
+                            {
+                                return [obj isKindOfClass:[UIButton class]];
+                            }];
+    
+    NSInteger numButtonsAsInt = [indexSet count];
+    return [NSNumber numberWithInt:numButtonsAsInt];
+}
+
 +(UIView *)findFirstUIViewIn:(NSArray *)subviews withLabelText:(NSString *)expectedText
 {
     NSIndexSet *indexSet = [self findIndexesOfLabelsIn:subviews withLabelText:expectedText];
@@ -24,12 +35,12 @@
 +(NSIndexSet *)findIndexesOfLabelsIn:(NSArray *)array withLabelText:(NSString *)labelText
 {
     NSIndexSet *subviewsWithLabelText = [array indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop)
-                                      {
-                                          if ([obj isKindOfClass:[UILabel class]]) {
-                                              return [[(UILabel *) obj text] isEqualToString:labelText];
-                                          }
-                                          return 0;
-                                      }];
+                                         {
+                                             if ([obj isKindOfClass:[UILabel class]]) {
+                                                 return [[(UILabel *) obj text] isEqualToString:labelText];
+                                             }
+                                             return 0;
+                                         }];
     return subviewsWithLabelText;
 }
 
@@ -43,7 +54,7 @@
 }
 
 + (NSIndexSet *)findIndexesOfViewsIn:(NSArray *)array
-    withAccessibilityLabelText:(NSString *)accessibilityLabelText
+          withAccessibilityLabelText:(NSString *)accessibilityLabelText
 {
     return [array indexesOfObjectsPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop)
             {
@@ -59,7 +70,5 @@
     assertThatInteger(view.frame.origin.x, greaterThan(@0));
     assertThatInteger(view.frame.origin.y, greaterThan(@0));
 }
-
-
-
 @end
+

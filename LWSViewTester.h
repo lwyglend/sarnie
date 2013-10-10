@@ -10,6 +10,7 @@
 
 @interface LWSViewTester : NSObject
 
++(NSNumber *)numberOfUIButtonsIn:(NSArray *)subviews;
 +(UIView *)findFirstUIViewIn:(NSArray *)subviews withLabelText:(NSString *)expectedText;
 +(UIView *)findFirstUIViewIn:(NSArray *)subviews withAccessibilityLabelText:(NSString *)expectedText;
 +(void)assertThatFrameOriginAndSizeIsNonZero:(UIView*)view;

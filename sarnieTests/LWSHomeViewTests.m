@@ -22,20 +22,20 @@
 
 -(void)setUp
 {
-    _homeView = [[LWSHomeView alloc]init];
+    _homeView = [LWSHomeView homeView];
 }
 
-//-(void)testMakeASarnieButtonIsDisplayedWithCorrectText
-//{
-//    //given
-//    NSString *expectedMakeASarnieButtonText = @"Make a sarnie!";
-//    
-//    //when
-//    
-//    //then
-//    UIView *view = [LWSViewTester findFirstUIViewIn:self.homeView.subviews withAccessibilityLabelText:expectedMakeASarnieButtonText];
-//    [LWSViewTester assertThatFrameOriginAndSizeIsNonZero:view];
-//    assertThat([view class], is([UIButton class]));
-//}
+-(void)testMakeASarnieButtonIsDisplayedWithCorrectText
+{
+    //given
+    NSString *expectedMakeASarnieButtonText = @"Make a sarnie!";
+    NSArray *subviews = self.homeView.subviews;
+    
+    //when
+    
+    //then
+    UIView *button = [LWSViewTester findFirstUIViewIn:subviews withAccessibilityLabelText:expectedMakeASarnieButtonText];
+    [LWSViewTester assertThatFrameOriginAndSizeIsNonZero:button];
+}
 
 @end

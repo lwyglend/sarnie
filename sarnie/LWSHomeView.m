@@ -19,8 +19,6 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    [self addSubview:self.makeASarnieButton];
 }
 
 - (UIButton *)setupMakeASarnieButton
@@ -39,6 +37,7 @@
 {
     self = [super initWithFrame:CGRectMake(0, 0, 300, 300)];
     _makeASarnieButton = [self setupMakeASarnieButton];
+    [self addSubview:self.makeASarnieButton];
     return self;
 }
 
