@@ -24,18 +24,19 @@
 - (UIButton *)setupMakeASarnieButton
 {
     if(!_makeASarnieButton) {
-        CGRect buttonFrame = CGRectMake(10, 10, 100, 100);
+        CGRect buttonFrame = CGRectMake(60, 100, 200, 60);
+        NSString *buttonText = @"Make a sarnie!";
         _makeASarnieButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [_makeASarnieButton setFrame:buttonFrame];
-        [_makeASarnieButton setTitle:@"Make a sarnie!" forState:UIControlStateNormal] ;
-        [_makeASarnieButton setAccessibilityLabel:@"Make a sarnie!"];
+        [_makeASarnieButton setTitle:buttonText forState:UIControlStateNormal] ;
+        [_makeASarnieButton setAccessibilityLabel:buttonText];
     }
     return _makeASarnieButton;
 }
 
 -(id)init
 {
-    self = [super initWithFrame:CGRectMake(0, 0, 300, 300)];
+    self = [super init];
     _makeASarnieButton = [self setupMakeASarnieButton];
     [self addSubview:self.makeASarnieButton];
     return self;

@@ -25,6 +25,11 @@
     _homeView = [LWSHomeView homeView];
 }
 
+-(void)testThatHomeViewIsCreated
+{
+    assertThat(self.homeView, isNot(NULL));
+}
+
 -(void)testMakeASarnieButtonIsDisplayedWithCorrectText
 {
     //given
